@@ -1,0 +1,54 @@
+{
+	"tags": {
+		"#hello": {
+			"priority": 1,
+			"words": [
+				"čau",
+				"ahoj",
+				"zdravím",
+				"dobrý deň",
+				"maj sa"
+			]
+		},
+		"#yes": {
+			"priority": 1,
+			"words": [
+				"áno",
+				"súhlasím"
+			]
+		},
+		"#no": {
+			"priority": 1,
+			"words": [
+				"nie",
+				"nesúhlasím",
+				"ňerozumel"
+			]
+		},
+		"#dont_know": {
+			"priority": 1,
+			"words": [
+				"neviem",
+				"pre mňa príliš zložité",
+				"nevedel",
+				"nerozumel som"
+			]
+		},
+		"#you": {
+			"priority": 2,
+			"words": [
+				"ty",
+				"tebe",
+				"tvoj"
+			]
+		},
+		"#me": {
+			"priority": 2,
+			"words": [
+				"môj",
+				"moje",
+				"moja"
+			]
+		}
+	}
+}

@@ -1,0 +1,85 @@
+{
+  "tags": {
+    "standing_tags": {
+      "#hello": [
+        "Stand/Gestures/Hey_1)",
+        "Stand/Gestures/Hey_2)",
+        "Stand/Gestures/Hey_3)",
+        "Stand/Gestures/Hey_4)",
+        "Stand/Gestures/Hey_5)",
+        "Stand/Gestures/Hey_6)",
+        "Stand/Gestures/Hey_7)"
+      ],
+      "#discuss": [
+        "Stand/Gestures/Explain_1)",
+        "Stand/Gestures/Explain_10)",
+        "Stand/Gestures/Explain_11)",
+        "Stand/Gestures/Explain_2)",
+        "Stand/Gestures/Explain_3)",
+        "Stand/Gestures/Explain_4)",
+        "Stand/Gestures/Explain_5)",
+        "Stand/Gestures/Explain_6)",
+        "Stand/Gestures/Explain_7)",
+        "Stand/Gestures/Explain_8)",
+        "Stand/Gestures/Explain_9)"
+      ],
+      "#yes": [
+        "Stand/Gestures/You_1)",
+        "Stand/Gestures/You_2)",
+        "Stand/Gestures/You_3)",
+        "Stand/Gestures/You_4)",
+        "Stand/Gestures/You_5)"
+      ],
+      "#no": [
+        "Stand/Gestures/No_1)",
+        "Stand/Gestures/No_2)",
+        "Stand/Gestures/No_3)",
+        "Stand/Gestures/No_4)",
+        "Stand/Gestures/No_5)",
+        "Stand/Gestures/No_6)",
+        "Stand/Gestures/No_7)",
+        "Stand/Gestures/No_8)",
+        "Stand/Gestures/No_9)"
+      ],
+      "#please": [
+        "Stand/Gestures/Please_1)",
+        "Stand/Gestures/Please_2)",
+        "Stand/Gestures/Please_3)"
+      ],
+      "#dont_know": [
+        "Stand/Gestures/IDontKnow_1)",
+        "Stand/Gestures/IDontKnow_2)",
+        "Stand/Gestures/IDontKnow_3)",
+        "Stand/Gestures/IDontKnow_4)",
+        "Stand/Gestures/IDontKnow_5)",
+        "Stand/Gestures/IDontKnow_6)"
+      ],
+      "#me": [
+        "Stand/Gestures/Me_1)",
+        "Stand/Gestures/Me_2)",
+        "Stand/Gestures/Me_3)",
+        "Stand/Gestures/Me_4)",
+        "Stand/Gestures/Me_5)",
+        "Stand/Gestures/Me_6)",
+        "Stand/Gestures/Me_7)",
+        "Stand/Gestures/Me_8)"
+      ],
+      "#you": [
+        "Stand/Gestures/Yes_1)",
+        "Stand/Gestures/Yes_2)",
+        "Stand/Gestures/Yes_3)",
+        "Stand/Gestures/You_1)",
+        "Stand/Gestures/You_2)",
+        "Stand/Gestures/You_3)",
+        "Stand/Gestures/You_4)",
+        "Stand/Gestures/You_5)"
+      ]
+    },
+    "sitting_tags": {
+      "#hello": "Sit/Gestures/Hey_3)",
+      "#me": "Sit/Gestures/Me_7)",
+      "#you": "Sit/Gestures/You_4)"
+      
+    }
+  }
+}
