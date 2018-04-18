@@ -19,14 +19,19 @@ def divide_text(paragraph):
     SentenceList = SentenceEnders.findall(paragraph)
     # Spliting paragraph into sentences.
     output = list()
-    for i in range(0,len(SentenceList)):
+    i = 0
+    
+    while i < len(SentenceList):
         if i == len(SentenceList)-1:
-            output.append(SentenceList[i])
+            pass
         else:
             if len(SentenceList[i]) + len(SentenceList[i+1]) < 30:
                 output.append(SentenceList[i]+SentenceList[i+1])
+                i =i+1
             else:
                 output.append(SentenceList[i])
+        i =i+1
+
     return [x.strip() for x in output]
     # Returning list of sentences
 
@@ -100,5 +105,9 @@ def embed_tag(config_file,tag,sentence,position):
             else:
                 movement = viable_tags.get(i)
             break
+    
+    start = '^start(animations/' + movement + ')'
+    end = '^wait(animations/' + movement + ')'
+    return (start + sentence + end) 
     
     

@@ -26,18 +26,18 @@ class Interakt:
             return
 
         try:
-            self.tts_proxy = ALProxy("ALTextToSpeech", IP, port)
+           self.tts_proxy = ALProxy("ALTextToSpeech", IP, port)
         except Exception, e:
-            print "Could not create proxy to ALTextToSpeech"
-            print "Error was: ", e
-            return
+           print "Could not create proxy to ALTextToSpeech"
+           print "Error was: ", e
+           return
 
         try:
-            self.animated_speech_proxy = ALProxy("ALAnimatedSpeech", IP, port)
+           self.animated_speech_proxy = ALProxy("ALAnimatedSpeech", IP, port)
         except Exception, e:
-            print "Could not create proxy to ALAnimatedSpeech"
-            print "Error was: ", e
-            return
+           print "Could not create proxy to ALAnimatedSpeech"
+           print "Error was: ", e
+           return
 
     def speech(self,sentence,mode):
 
@@ -49,18 +49,18 @@ class Interakt:
         self.sentence = sentence
         if mode == 0:
             self.tts_proxy.say(sentence)
+            print('Said(tts):'+sentence)
             return 0
         
         self.divided = divide_text(self.sentence)
         self.annotated = str()
         self.posture = self.posture_proxy.getPostureFamily()
-        self.posture_ID = int()
+        self.posture_ID = 1
 
         if self.posture == 'Standing':
-            self.posture = 0
+            self.posture_ID = 0
         else:
-            self.posture = 1
-
+            self.posture_ID = 1
 
         for i in self.divided:
             if instance_tag(i) != False:
@@ -75,9 +75,9 @@ class Interakt:
                     self.annotated = self.annotated + embed_tag('config.json',find_tag(i,'tags.json'),i,self.posture_ID)   
 
         self.animated_speech_proxy.say(self.annotated)
-        
+        print(self.annotated)
         return 0
 
 
-
-###m = Interakt('d213',9959)
+#m = Interakt('127.0.0.1',54120,'config.json','tags.json')
+#m.speech('Ahoj, ako sa máš?',1)
